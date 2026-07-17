@@ -1,0 +1,28 @@
+# =============================================================
+# Yoga Pose Detection - Python Dependencies
+# Tested with Python 3.10
+# =============================================================
+
+# --- Deep Learning ---
+# NOTE: tensorflow==2.13.0 is not available in this environment.
+# Use a version that pip can install.
+tensorflow==2.20.0          # MobileNetV2 model training & inference
+keras==3.8.0                # Keras standalone (compatible with TF)
+
+
+
+# --- Computer Vision / Pose Estimation ---
+mediapipe==0.10.33         # Body keypoint (skeleton) detection (available in this env)
+
+opencv-python==4.8.1.78     # Camera capture & image processing
+
+# --- Web Interface ---
+streamlit==1.28.0           # Web UI
+streamlit-webrtc==0.47.1    # Real-time webcam streaming inside Streamlit
+
+# --- Data / Utilities ---
+numpy==1.26.4               # Numerical operations (compatible with Python 3.12)
+Pillow==10.0.1              # Image loading/saving
+scikit-learn==1.3.1         # Train/test split & metrics
+matplotlib==3.7.2           # Plotting training history (optional)
+av==10.0.0                  # Audio/Video frames for streamlit-webrtc
